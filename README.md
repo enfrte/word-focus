@@ -6,3 +6,4 @@ https://tokipona.today/2021/08/23/Spy-technique-to-become-fluent-in-Toki-pona/
 
 ### Demo 
 
+https://interlingue.2038.io/word-focus/
