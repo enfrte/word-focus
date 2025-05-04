@@ -13,54 +13,62 @@
 			min-height: 60px;
 		}
 
+		.wf-container {
+			max-width: 600px;
+		}
+
 		.background-words {
 			color: #00000050;
 		}
 	</style>
 </head>
-<body class="container py-4">
+<body>
 
-	<div class="row text-center mb-3">
-		<div class="col">
-			<h5 class="text-muted">Previous</h5>
-			<div class="words background-words" id="previous"></div>
+	<div class="container wf-container py-4">
+
+		<div class="row text-center mb-3">
+			<div class="col">
+				<h5 class="text-muted">Previous</h5>
+				<div class="words background-words" id="previous"></div>
+			</div>
 		</div>
-	</div>
 
-	<hr>
+		<hr>
 
-	<div class="row text-center mb-3">
-		<div class="col">
-			<h5 class="text-muted">Current</h5>
-			<div class="words" id="current"></div>
+		<div class="row text-center mb-3">
+			<div class="col">
+				<h5 class="text-muted">Current</h5>
+				<div class="words" id="current"></div>
+			</div>
 		</div>
-	</div>
 
-	<hr>
+		<hr>
 
-	<div class="row text-center mb-3">
-		<div class="col">
-			<h5 class="text-muted">Next</h5>
-			<div class="words background-words" id="next"></div>
+		<div class="row text-center mb-3">
+			<div class="col">
+				<h5 class="text-muted">Next</h5>
+				<div class="words background-words" id="next"></div>
+			</div>
 		</div>
-	</div>
 
-	<hr>
+		<hr>
 
-	<div class="row mb-3">
-		<div class="col-md-6">
-			<label for="wpm" class="form-label">Words Per Minute (WPM)</label>
-			<input type="number" class="form-control" id="wpm" value="300" min="1" />
+		<div class="row mb-3">
+			<div class="col-md-6">
+				<label for="wpm" class="form-label">Words Per Minute (WPM)</label>
+				<input type="number" class="form-control" id="wpm" value="300" min="1" />
+			</div>
 		</div>
-	</div>
-	
-	<div class="text-center mb-3">
-		<button id="start" class="btn btn-primary btn-lg d-none">Start</button>
-	</div>
+		
+		<div class="text-center mb-3">
+			<button id="start" class="btn btn-primary btn-lg d-none">Start</button>
+		</div>
 
-	<div class="mb-3">
-		<label for="source" class="form-label">Input Text</label>
-		<textarea class="form-control" id="source" rows="4" placeholder="Enter your text here..."></textarea>
+		<div class="mb-3">
+			<label for="source" class="form-label">Input Text</label>
+			<textarea class="form-control" id="source" rows="4" placeholder="Enter your text here..."></textarea>
+		</div>
+
 	</div>
 
 	<script>
