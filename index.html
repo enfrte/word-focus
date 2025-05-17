@@ -89,7 +89,9 @@
 
 		<div class="mb-3">
 			<label for="source" class="form-label">Input Text</label>
-			<textarea class="form-control" id="source" rows="4" placeholder="Enter your text here..."></textarea>
+			<textarea class="form-control" id="source" rows="7" placeholder="Enter your text here...">This technique is called Rapid Serial Visual Presentation (RSVP).
+It's used to display text one word at a time in a fixed position on the screen, typically at high speeds (e.g. 300-600 words per minute). This method minimizes eye movement and is often used to improve speed reading.
+It's also sometimes used in cognitive psychology experiments to study attention, memory, and reading behavior.</textarea>
 		</div>
 
 	</div>
@@ -132,6 +134,9 @@
 				if (index >= source_arr.length) index = 0;
 			}, delay);
 		});
+
+		// Simulate an input event on startup to populate the source_arr.
+		document.addEventListener('DOMContentLoaded', () => source.dispatchEvent(new Event('input')));
 
 	</script>
 </body>
